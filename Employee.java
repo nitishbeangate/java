@@ -1,3 +1,15 @@
+/*
+List of objects that implement this interface can be sorted automatically by sort method of the list interface. 
+This interface has compareTo() method that is used by the sort() method of the list.
+In this code Employee class is implementing Comparable interface and have method compareTO(). 
+ComparableDemo.java is showing the use of this interface. This class first makes a list of objects of type Employee and 
+call sort method of java.util.Collections, 
+which internally uses compareTo() method of Employee class and sort the list accordingly.
+
+*/
+
+
+
 public class Employee implements Comparable {
  
     int EmpID;
