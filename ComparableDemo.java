@@ -20,3 +20,21 @@ public class ComparableDemo{
  
     }
 }
+/*
+EmpID 1
+Ename Harry
+Sal20000.0
+ 
+EmpID 0
+Ename Tom
+Sal40000.0
+ 
+EmpID 2
+Ename Maggie
+Sal50000.0
+ 
+EmpID 3
+Ename Chris
+Sal70000.0
+
+*/
