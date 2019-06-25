@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Editor 1</title>
+</head>
+<body>
+<h2 align='center'>Editor</h2>
+<span style='margin-left: 30px;'>Enter content.</span>
+<br />
+<textarea name='data' id='data' rows='25' cols='70' style='resize:none;top:60px;margin-left: 30px;border:2px solid #000;'
+onkeyup="showData()"
+></textarea>
+<span id='s1' style='border:2px solid #000;width:500px;height:380px;position:absolute;left:650px;top:75px;overflow: scroll;'>
+</span>
+<script type='text/javascript'>
+function showData()
+{
+//1. fetch data from textarea to a variable 
+x=document.getElementById('data').value;
+
+//2. assign variable to span 
+document.getElementById('s1').innerHTML=x;
+}
+
+
+</script>
+
+</body>
+</html>

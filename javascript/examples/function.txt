@@ -1,0 +1,2 @@
+var s=3; // local variable  in function
+s=3; // global variable in function

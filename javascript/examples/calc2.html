@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Calc 2</title>
+</head>
+<body>
+<h1>Calc 2</h1>
+Enter First number :
+<input type='text' name='fnum' id='fnum' />
+<br />
+Enter Second number :
+<input type='text' name='snum' id='snum' />
+<br />
+<input type='button' name='b1' id='b1' value='add' onclick="do_calc('add')" />
+<input type='button' name='b2' id='b2' value='sub'  onclick="do_calc('sub')" />
+<input type='button' name='b3' id='b3' value='mul' onclick="do_calc('mul')" />
+<input type='button' name='b4' id='b4' value='div'  onclick="do_calc('div')" />
+<br /><br />
+Result is :<input type='text' name='rnum' id='rnum' />
+<br />
+Result is :<span id='s1'></span>
+<script type='text/javascript'>
+function do_calc(work)
+{
+a=document.getElementById('fnum').value; 
+b=document.getElementById('snum').value;  
+switch(work)
+{
+case "add":
+	c=parseInt(a)+parseInt(b);
+	break;
+case "sub":c=a-b;break;
+case "mul":c=a*b;break;
+case "div":c=a/b;break;
+	
+}
+document.getElementById('rnum').value=c;
+document.getElementById('s1').innerHTML=c;
+}
+
+</script>
+
+</body>
+</html>

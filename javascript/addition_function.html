@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Calc 1</title>
+</head>
+<body>
+<h1>Calc 1</h1>
+Enter First number :
+<input type='text' name='fnum' id='fnum' />
+<br />
+Enter Second number :
+<input type='text' name='snum' id='snum' />
+<br />
+<input type='button' name='b1' id='b1' value='add' onclick="do_add()" />
+<br>
+Result is :<input type='text' name='rnum' id='rnum' />
+<br />
+Result is :<span id='s1'></span>
+<script type='text/javascript'>
+function do_add()
+{
+a=document.getElementById('fnum').value; 
+b=document.getElementById('snum').value;  
+c=parseInt(a)+parseInt(b);
+document.getElementById('rnum').value=c;
+document.getElementById('s1').innerHTML=c;
+}
+
+
+</script>
+
+</body>
+</html>

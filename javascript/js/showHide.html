@@ -1,0 +1,27 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script language="javascript">
+
+        function show()
+        {
+            document.getElementById("img1").style.visibility="visible";
+        }
+        function hide()
+        {
+            document.getElementById("img1").style.visibility="hidden";
+        }
+        </script>
+  </head>
+  <body>
+      <img src="img/fan.jpg" width="300" height="300" id="img1" alt="My Image">
+
+      <form>
+      <input type="button" id="b1" value="SHOW" onclick="show()">
+      <input type="button" id="b2" value="HIDE" onclick="hide()">
+      </form>
+  </body>
+</html>

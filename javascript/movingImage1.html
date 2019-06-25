@@ -1,0 +1,49 @@
+<html>
+<head><title>MOVE IMAGE</title>
+<script type="text/javascript">
+
+var imglab=new Array();
+imglab["img1"]=new Image(100,105);
+imglab["img1"].src="img/t1.jpg";
+imglab["img2"]=new Image(100,105);
+imglab["img2"].src="img/t2.jpg";
+imglab["img3"]=new Image(100,105);
+imglab["img3"].src="img/t3.jpg";
+imglab["img4"]=new Image(100,105);
+imglab["img4"].src="img/t4.jpg";
+
+imglab["img5"]=new Image(100,105);
+imglab["img5"].src="t5.jpg";
+
+imglab["img6"]=new Image(100,105);
+imglab["img6"].src="img/t6.jpg";
+
+var nm=new Array("img1","img2","img3","img4","img5","img6");
+
+var i=0;
+var im;
+
+function changeimage()
+{
+ im=nm[i];
+ 
+    if(i==5)
+  {
+     i=0;
+   }  
+  else{
+       i++;
+         }
+      document.test.src=imglab[im].src;
+
+      setTimeout("changeimage()",3000);
+}
+</script>
+</head>
+<body onload="changeimage()">
+  
+   
+  <center><img src="t1.jpg" name="test" height="300" width="250"></center>
+
+</body>
+</html>

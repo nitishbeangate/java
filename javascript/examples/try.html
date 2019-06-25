@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cal</title>
+</head>
+<body>
+	<center>
+	
+		First num : 
+<input type="text" name="val1" id="val1" >
+<br>
+<br>
+     Second num : 
+<input type="text" name="val2" id="val2" >
+<br>
+<br>
+<input type='button' name='btn' id='btn' value='add' onclick="add()" />
+<br>
+<br>
+Result : <input type='text' name='rnum' id='rnum' />
+
+</center>
+<script type="text/javascript">
+	
+	function add()
+	{
+
+ a=document.getElementById('val1').value;	
+ b=document.getElementById('val2').value;	
+ c=parseInt(a)+parseInt(b);	
+document.getElementById('rnum').value=c;
+	}
+
+
+</script>
+
+</body>
+</html>

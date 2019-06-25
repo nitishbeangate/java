@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Addition</title>
+</head>
+<body>
+<h2>Addition</h2>
+<script language='javascript'>
+function addnum()
+{
+//fetch-input 
+x=document.getElementById('fnum').value; 
+y=document.getElementById('snum').value;
+//process 
+z=parseFloat(x)+parseFloat(y);
+//assign - output 
+document.getElementById('rnum').value="<u>"+z+"</u>";
+document.getElementById('s1').innerHTML="<u>"+z+"</u>";
+}
+
+</script>
+<h3>using id attribute</h3>
+<form name='first' id='first'>
+Enter First number :
+<input type='text' name='fnum' id='fnum' /><br />
+Enter Second number :
+<input type='text' name='snum' id='snum' /><br />
+<br /><input type='button'  name='b1' id='b1' value='add' onclick="addnum()" />
+<br />Result number is :
+<input type='text' name='rnum' id='rnum' readonly />
+<br />Result number is <span id='s1'>kuch bhi</span>
+</form>
+
+</body>
+</html>

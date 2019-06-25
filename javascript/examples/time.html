@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Samay</title>
+</head>
+<body onload="showsamay()">
+<h2>Samay</h2>
+<br /><br />
+<span id='t1' style='color:blue;background-color:orange;font-size:40px;padding:20px;border:8px double red'>Hello</span>
+<script type='text/javascript'>
+function showsamay()
+{
+d=new Date();
+//Date is a predefined class in javascript 
+//d is its object 
+h=d.getHours();
+m=d.getMinutes();
+s=d.getSeconds();
+t=h+":"+m+":"+s;
+document.getElementById('t1').innerHTML=t;
+
+setTimeout("showsamay()",1000);
+//to a call function after specific delay (in milliseconds)
+//1 second=1000ms
+}
+
+</script>
+</body>
+</html>

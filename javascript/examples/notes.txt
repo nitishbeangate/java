@@ -1,0 +1,69 @@
+How to define function in javascript
+
+function is a keyword in javascript, to define function it is required
+
+function functionname([arguments/para])
+{
+//function body
+[return]
+}
+
+content with [] is optional part
+
+function add(x,y)
+{
+z=x+y;
+return z;
+}
+
+
+a=5;
+b=6;
+c=add(a,b);	//11
+
+a="4"
+b=3;	
+c=add(a,b);	//"43"
+
+-----------------------------------------
+DOM: Document Object Model
+
+it works on narrow down method
+
+using name attribute
+=================
+fetch from FORM CONTROL
+x=document.all.formname.fieldname.value;
+
+assign to FORM CONTROL
+document.all.formname.fieldname.value=x;
+
+
+using id attribute
+=================
+fetch from FORM CONTROL
+x=document.getElementById('id').value;
+
+assign to FORM CONTROL
+document.getElementById('id').value=x;
+
+===========================================
+span/div are html container tags
+
+Container Tag: which can hold other tags.
+	tags assigned can be changed to it
+	tags assigned are implemented at run time
+
+for form controls key property is value
+
+for span/div key property is innerHTML
+
+
+
+
+
+
+
+
+
+

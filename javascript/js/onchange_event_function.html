@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Select Course.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="HTML">HTML
+  <option value="CSS">CSS
+  <option value="JAVASCRIPT">JAVASCRIPT
+  <option value="PHP">PHP
+</select>
+
+<p>When you select a course , a function is triggered which outputs the value of the selected course.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+</body>
+</html>

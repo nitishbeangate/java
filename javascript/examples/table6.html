@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Table 3</title>
+</head>
+<body>
+<h2>Table 3</h2>
+<script>
+n=prompt("Enter a number ");
+
+document.write("<table border='1' align='center' cellspacing='0' cellpadding='5' width='250'>");
+
+for(i=1;i<=50;i++)
+{
+r=n*i;
+//document.write("<br />"+n+" *"+i+" ="+r);
+switch(i%7)
+{
+case 0:document.write("<tr bgcolor='violet'>");break;
+case 1:document.write("<tr bgcolor='indigo'>");break;
+case 2:document.write("<tr bgcolor='blue'>");break;
+case 3:document.write("<tr bgcolor='green'>");break;
+case 4:document.write("<tr bgcolor='yellow'>");break;
+case 5:document.write("<tr bgcolor='orange'>");break;
+case 6:document.write("<tr bgcolor='red'>");break;
+
+
+}
+
+
+
+
+
+document.write("<td width='50' align='center'>"+n+"</td>");
+document.write("<td width='50' align='center'>x</td>");
+document.write("<td width='50' align='center'>"+i+"</td>");
+document.write("<td width='50' align='center'>=</td>");
+document.write("<td width='50' align='center'>"+r+"</td>");
+document.write("</tr>");
+
+}
+document.write("</table>");
+
+</script>
+
+</body>
+</html>
