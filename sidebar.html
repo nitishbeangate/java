@@ -1,0 +1,128 @@
+<aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
+          <div class="main-navbar">
+            <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
+              <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
+                <div class="d-table m-auto">
+                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/shards-dashboards-logo.svg" alt="Shards Dashboard">
+                  <span class="d-none d-md-inline ml-1">Shards Dashboard</span>
+                </div>
+              </a>
+              <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
+                <i class="material-icons"></i>
+              </a>
+            </nav>
+          </div>
+          <form action="#" class="main-sidebar__search w-100 border-right d-sm-flex d-md-none d-lg-none">
+            <div class="input-group input-group-seamless ml-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+              <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search">
+            </div>
+          </form>
+          <div class="nav-wrapper">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">
+                  <i class="material-icons">edit</i>
+                  <span>Blog Dashboard</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="components-blog-posts.html">
+                  <i class="material-icons">vertical_split</i>
+                  <span>Blog Posts</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add-new-post.html">
+                  <i class="material-icons">note_add</i>
+                  <span>Add New Post</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="form-components.html">
+                  <i class="material-icons">view_module</i>
+                  <span>Forms &amp; Components</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="tables.html">
+                  <i class="material-icons">table_chart</i>
+                  <span>Tables</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="user-profile-lite.html">
+                  <i class="material-icons">person</i>
+                  <span>User Profile</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="errors.html">
+                  <i class="material-icons">error</i>
+                  <span>Errors</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+.main-sidebar {
+    top: 0;
+    position: fixed;
+    height: calc(100vh);
+    background: #fff;
+    z-index: 1070;
+    will-change: transform;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+    box-shadow: 0 0.125rem 9.375rem rgba(90,97,105,.1), 0 0.25rem 0.5rem rgba(90,97,105,.12), 0 0.9375rem 1.375rem rgba(90,97,105,.1), 0 0.4375rem 2.1875rem rgba(165,182,201,.1);
+}
+.main-navbar .navbar {
+    height: 3.75rem;
+}
+.border-bottom {
+    border-bottom: 1px solid #e1e5eb!important;
+}
+.main-sidebar .nav-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 3.75rem - 1px);
+}
+.main-sidebar .nav .nav-item, .main-sidebar .nav .nav-link {
+    white-space: nowrap;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    will-change: background-color,box-shadow,color;
+    transition: box-shadow .2s ease,color .2s ease,background-color .2s ease;
+    font-size: .85rem;
+}
+.main-sidebar .nav .nav-item .nav-link {
+    border-bottom: 1px solid #e1e5eb;
+    font-weight: 400;
+    color: #3d5170;
+    padding: .9375rem 1.5625rem;
+}
+.main-sidebar .nav .nav-item, .main-sidebar .nav .nav-link {
+    white-space: nowrap;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    will-change: background-color,box-shadow,color;
+    transition: box-shadow .2s ease,color .2s ease,background-color .2s ease;
+    font-size: .85rem;
+}
+.main-sidebar .nav .nav-item .nav-link.active, .main-sidebar .nav .nav-item .nav-link:hover, .main-sidebar .nav .nav-item.active, .main-sidebar .nav .nav-item:hover {
+    box-shadow: inset 0.1875rem 0 0 #007bff;
+    background-color: #fbfbfb;
+    color: #007bff;
+}
